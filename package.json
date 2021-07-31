@@ -4,9 +4,13 @@
   "description": "This project is meant to contain some Postman collections targeting some rest APIs. It is meant for learning and checking out what is possible in Postman/newman ",
   "main": "index.js",
   "scripts": {
-    "test1": "newman run CountriesAPI.postman_collection.json"
+    "test1": "newman run CountriesAPI.postman_collection.json -r junitxray --reporter-junitxray-export 'reports/junit.xml' -n 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "newman": "^5.2.4",
+    "newman-reporter-junitxray": "^1.0.3"
+  }
 }

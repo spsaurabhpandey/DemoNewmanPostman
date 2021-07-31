@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="CountriesAPI" tests="2">
+  <testsuite id="6efc6358-0c66-4f93-90e1-783a55ae8469" name="" tests="1" timestamp="2021-07-31T22:51:26.841" time="0.314" failures="0" errors="0">
+    <testcase classname="CountriesApi" name="https://restcountries.eu/rest/v2/name/India" time="0.314"/>
+  </testsuite>
+  <testsuite id="fbba7813-bb44-4df9-983b-cee76584127a" name="" tests="1" timestamp="2021-07-31T22:51:26.841" time="0.186" failures="0" errors="0">
+    <testcase classname="CountriesApi" name="https://restcountries.eu/rest/v2/capital/Delhi" time="0.186"/>
+  </testsuite>
+</testsuites>
