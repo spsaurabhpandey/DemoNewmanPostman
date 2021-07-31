@@ -29,6 +29,6 @@ steps:
   inputs:
     testResultsFormat: 'JUnit'
     testResultsFiles: '*.xml'
-    searchFolder: '$(System.DefaultWorkingDirectory)/cypress/reports/junit'
+    searchFolder: '$(System.DefaultWorkingDirectory)/reports'
     mergeTestResults: true
     testRunTitle: 'Publish Test Results'
