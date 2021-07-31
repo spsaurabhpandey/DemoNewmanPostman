@@ -1,0 +1,12 @@
+{
+  "name": "Postman",
+  "version": "1.0.0",
+  "description": "This project is meant to contain some Postman collections targeting some rest APIs. It is meant for learning and checking out what is possible in Postman/newman ",
+  "main": "index.js",
+  "scripts": {
+    "test1": "newman run CountriesAPI.postman_collection.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

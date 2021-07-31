@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "7a0c4ee0-1289-44c3-86e5-1973fc90d3fc",
+		"name": "CountriesAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://restcountries.eu/rest/v2/name/India",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"tests[\"check status code\"] = responseCode.code === 200;\r",
+							"var response = JSON.parse(responseBody);\r",
+							"tests[\"check if details of India is displayed\"] = response[1].name==='India'"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restcountries.eu/rest/v2/name/India",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"eu"
+					],
+					"path": [
+						"rest",
+						"v2",
+						"name",
+						"India"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://restcountries.eu/rest/v2/capital/Delhi",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"tests[\"check status code\"] = responseCode.code === 200;\r",
+							"var response = JSON.parse(responseBody);\r",
+							"tests[\"check name of country is India\"] = response[0].name === 'India';\r",
+							"tests[\"check if capital is New Delhi\"] = response[0].capital ===  'New Delhi';"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restcountries.eu/rest/v2/capital/Delhi",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"eu"
+					],
+					"path": [
+						"rest",
+						"v2",
+						"capital",
+						"Delhi"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
